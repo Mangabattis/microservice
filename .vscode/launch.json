@@ -2,13 +2,21 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MsLaboratorioApplication",
+            "request": "launch",
+            "mainClass": "br.com.sislab.ms_laboratorio.MsLaboratorioApplication",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "Spring Boot-ServiceDiscoveryApplication<service_discovery>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "mainClass": "br.com.sislab.service_discovery.ServiceDiscoveryApplication",
             "projectName": "service_discovery",
             "args": "",
-            "envFile": "${workspaceFolder}/.env"
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=55015 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=service_discovery"
         },
         {
             "type": "java",
@@ -18,7 +26,8 @@
             "mainClass": "com.ucsal.pimbas.mssoftware.MsSoftwareApplication",
             "projectName": "ms-software",
             "args": "",
-            "envFile": "${workspaceFolder}/.env"
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=55032 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=ms-software"
         },
         {
             "type": "java",
@@ -37,6 +46,16 @@
             "cwd": "${workspaceFolder}",
             "mainClass": "br.com.sislab.api_gateway.ApiGatewayApplication",
             "projectName": "api_gateway",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MsLaboratorioApplication<ms-laboratorio>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.com.sislab.ms_laboratorio.MsLaboratorioApplication",
+            "projectName": "ms-laboratorio",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
         }
