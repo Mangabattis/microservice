@@ -1,0 +1,44 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ServiceDiscoveryApplication<service_discovery>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.com.sislab.service_discovery.ServiceDiscoveryApplication",
+            "projectName": "service_discovery",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MsSoftwareApplication<ms-software>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.ucsal.pimbas.mssoftware.MsSoftwareApplication",
+            "projectName": "ms-software",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MsLoginApplication<ms-login>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.com.sislab.ms_login.MsLoginApplication",
+            "projectName": "ms-login",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ApiGatewayApplication<api_gateway>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.com.sislab.api_gateway.ApiGatewayApplication",
+            "projectName": "api_gateway",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
